@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Authors</title>
+</head>
+<body onload="DisplayBanners()">
+    <div id="main">
+        <div id="nav">
+            <img src="images/logo.png" alt="">
+            <div id="nav-part">
+                <a href="index.html">Home</a>
+                <a href="allbooks.html">All Books</a>
+                <a href="authors.html">Authors</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div id="search">
+
+            </div>
+            <button onclick="login()">Log In</button>
+        </div>
+
+        <div id="title">
+            <h1>Famous Authors</h1>
+        </div>
+        <div id="imgbanner">
+            <img src="images/author1.jpg" alt="" id="RotateBanner">
+        </div>
+
+        <div id="banner">
+            <p>Get 20% off on all books by featured authors! Limited time only!</p>
+        </div>        
+
+        <div id="featured-authors">
+            <h2 id="featured-authors-title">Featured Authors</h2>
+            <div id="author">
+                <img src="images/author1.jpg" alt="Author 1" id="author-image">
+                <h3 id="author-name">J.K. Rowling</h3>
+                <p id="author-description">British author, known for the Harry Potter series.</p>
+                <a href="https://en.wikipedia.org/wiki/J._K._Rowling" target="_blank" id="author-link">Learn More</a>
+            </div>
+            <div id="author">
+                <img src="images/author2.jpg" alt="Author 2" id="author-image">
+                <h3 id="author-name">George R.R. Martin</h3>
+                <p id="author-description">American novelist and short story writer, known for A Song of Ice and Fire.</p>
+                <a href="https://en.wikipedia.org/wiki/George_R._R._Martin" target="_blank" id="author-link">Learn More</a>
+            </div>
+            <div id="author">
+                <img src="images/author3.jpg" alt="Author 3" id="author-image">
+                <h3 id="author-name">Agatha Christie</h3>
+                <p id="author-description">English writer known for her 66 detective novels and 14 short story collections.</p>
+                <a href="https://en.wikipedia.org/wiki/Agatha_Christie" target="_blank" id="author-link">Learn More</a>
+            </div>
+        </div>
+
+        <div id="all-authors">
+            <h2 id="all-authors-title">All Authors</h2>
+            <div id="author-list">
+                <div id="author-card">
+                    <img src="images/author4.jpg" alt="Author 4" id="author-card-image">
+                    <h3 id="author-name">Mark Twain</h3>
+                    <p id="author-description">American author known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn.</p>
+                </div>
+                <div id="author-card">
+                    <img src="images/author5.jpeg" alt="Author 5" id="author-card-image">
+                    <h3 id="author-name">Jane Austen</h3>
+                    <p id="author-description">English novelist known for works like Pride and Prejudice and Sense and Sensibility.</p>
+                </div>
+                <div id="author-card">
+                    <img src="images/author6.jpg" alt="Author 6" id="author-card-image">
+                    <h3 id="author-name">F. Scott Fitzgerald</h3>
+                    <p id="author-description">American novelist known for The Great Gatsby.</p>
+                </div>
+                <!-- Add more authors as needed -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

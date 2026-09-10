@@ -1,0 +1,495 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#nav {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 30px 20px;
+    background-color: #326786;
+    
+}
+#nav-part{
+    display: flex;
+    
+}
+#nav a{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: relative;
+    background-color: black;
+    margin-right: 20px;
+    border: 1px solid black;
+}
+#nav img{
+    width: 250px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 20px   ;
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+}
+
+#nav a:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+#nav button{
+    text-decoration: none;
+    font-size: 23px;
+    padding: 7px 15px ;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid black;
+    font-weight: light;
+    background-color: black;
+    color: white;
+}
+
+#nav button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+#books{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+    
+}
+
+#books h2{
+    padding: 10px 0px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 35px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#book-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 1250px; /* Set max width for slider */
+    margin: 0 auto;
+}
+
+#booklist {
+    overflow: hidden; /* Hides the extra books */
+    width: 1400px; /* Width to display 4 books at a time */
+}
+
+#book-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth sliding */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#book-container img {
+    width: 300px;
+    height: 380px;
+    margin: 0 10px; /* Spacing between books */
+    object-fit: contain;
+    transition: all 0.5s ease;  
+}
+
+#prevBtn, #nextBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#prevBtn {
+    left: -50px; /* Positioning the left arrow button */
+}
+
+#nextBtn {
+    right: -50px; /* Positioning the right arrow button */
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    color: rgb(63, 179, 208);
+}
+/* best seller button */
+#bestsell img{
+    margin: 20px 0px;
+    height: 450px;
+    width: 850px;
+    box-shadow: -1.5px 1.5px 30px rgb(216, 96, 37);
+    object-fit: contain; 
+    transition: all 0.7s ease;  
+}
+
+#prevButton {
+    padding: 15px 30px;
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: mediumaquamarine;
+    position: absolute;
+    left: 12%;
+    bottom: -42%;
+}
+#nextButton {
+    padding: 15px 30px;
+    border: none;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 50px;
+    background-color: mediumaquamarine;
+    position: absolute;
+    right: 12%;
+    bottom: -42%;
+}
+
+#bestsell button:hover{
+    cursor: pointer;
+
+}
+
+
+/* All Books  */
+
+#allbooks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 70px;
+    justify-content: center;
+}
+
+#allbooks h2 {
+    padding: 10px 0px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 35px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#ficbooks {
+    display: flex; /* Display the image and text side by side */
+    align-items: center; /* Vertically align the content */
+    margin: 20px 0;
+    padding: 20px;
+}
+
+#ficbooks img {
+    width: 200px;
+    margin-right: 20px; /* Add space between the image and the text */
+}
+
+#ficbooks h3 {
+    font-size: 24px;
+    margin-bottom: 55px;
+}
+
+#ficbooks p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#ficbooks h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+#ficbooks a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/* fiction books  */
+#fiction-books {
+    width: 85%;
+    margin: 0 auto; /* Center align the books section */
+}
+
+#fiction-books h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#book {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light background for the book info */
+    border-radius: 5px;
+}
+
+#book img {
+    width: 200px; /* Adjust book image width */
+    height: 300px; /* Adjust book image height */
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+#book-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#book-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#book-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#book-info h4 {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#book-info a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+#book-info a:hover {
+    text-decoration: underline;
+}
+
+#allbooks button{
+    border-radius: 20px;
+    padding: 5px;
+}
+#allbooks button:hover{
+    cursor: pointer;
+}
+
+/* Login form */
+#registration-form {
+    padding: 20px; 
+    width: 400px; 
+    margin: auto; /* Center the form */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-right: 50px;
+}
+
+#registration-form h2 {
+    text-align: center;
+}
+
+#registration-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px; /* Increased padding for better touch targets */
+    margin: 8px 0; /* Consistent vertical spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+input[type="submit"] {
+    background-color: #4c72af;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button full width */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Author  */
+
+/* Reset margin and padding for all elements */
+
+
+#search {
+    float: right; /* Align search to the right */
+}
+
+/* Featured Authors Section */
+#featured-authors {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some spacing around sections */
+}
+
+#featured-authors-title {
+    font-size: 24px; /* Adjust font size for title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+#author {
+    display: inline-block; /* Align author sections in a row */
+    width: 30%; /* Set width for each author card */
+    margin: 10px; /* Space around each author card */
+    vertical-align: top; /* Align cards to the top */
+}
+
+#author-image {
+    width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+#author-name {
+    font-size: 18px; /* Font size for author name */
+    margin: 8px 0; /* Spacing for name */
+}
+
+#author-description {
+    font-size: 14px; /* Font size for description */
+    margin: 8px 0; /* Spacing for description */
+}
+
+/* All Authors Section */
+#all-authors {
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Add some spacing around sections */
+}
+
+#all-authors-title {
+    font-size: 24px; /* Adjust font size for title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+#author-card {
+    display: inline-block; /* Align author cards in a row */
+    width: 30%; /* Set width for each author card */
+    margin: 10px; /* Space around each author card */
+    vertical-align: top; /* Align cards to the top */
+}
+
+#author-card-image {
+    width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Button Styles */
+#author-link {
+    display: inline-block; /* Align the link as a block */
+    padding: 10px 15px; /* Padding for the link */
+    background-color: #4CAF50; /* Link background color */
+    color: white; /* Link text color */
+    border-radius: 5px; /* Rounded corners for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+#author-link:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+#featured-authors,
+#all-authors {
+    text-align: center; /* Center align all text in the authors section */
+}
+
+#author img,
+#author-card img {
+    width: 250px; /* Set width of images */
+    height: 350px; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Center images */
+    margin: 0 auto 10px; /* Center images and add spacing below */
+}
+
+#author, #author-card {
+    margin: 20px; /* Add margin around each author block */
+}
+
+#banner {
+    background-color: #f8d7da; 
+    color: #721c24; 
+    text-align: center; 
+    padding: 15px;
+    margin: 20px 0; 
+    border: 1px solid #f5c6cb; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+#imgbanner {
+    display: flex;                
+    justify-content: center;      
+    align-items: center;          
+    height: 450px;            
+    overflow: hidden;            
+    margin: 20px 0;           
+    position: relative;     
+}
+
+#imgbanner img {
+    height: 100%;              
+    width: 350px;            
+    max-width: none;        
+    object-fit: cover;            
+    transition: opacity 1s ease;
+    box-shadow: 0 6px 12px rgba(53, 87, 238, 0.818);
+}
+

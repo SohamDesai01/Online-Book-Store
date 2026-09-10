@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon_io (1)/icon1.png" type="image/x-icon">
+    <title>Book Haven</title>
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <img src="images/logo.png" alt="">
+            <div id="nav-part">
+                <a href="index.html">Home</a>
+                <a href="allbooks.html">All Books</a>
+                <a href="authors.html">Authors</a>
+                <a href="cart.html">Cart</a>
+            </div>
+            <div id="search">
+
+            </div>
+            <button onclick="login()">Log In</button>
+        </div>
+        <div id="books">
+            <div id="featured">
+                <h2>Featured Books</h2>
+                <div id="book-slider">
+                    <button id="prevBtn" onclick="slidePrev()">&#9664;</button> <!-- Left Arrow -->
+                    <div id="booklist">
+                        <div id="book-container">
+                            <img src="images/book1.jpg" alt="book1" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book2.jpg" alt="book2" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book3.jpeg" alt="book3" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book4.jpg" alt="book4" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book5.jpg" alt="book5" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book6.jpg" alt="book6" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book7.jpg" alt="book7" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book8.jpg" alt="book8" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book9.jpg" alt="book9" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book10.png" alt="book10" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                            <img src="images/book11.jpeg" alt="book11" tabindex="0" onfocus="bookZoomIn(this)" onblur="bookZoomOut(this)">
+                        </div>                        
+                    </div>
+                    <button id="nextBtn" onclick="slideNext()">&#9654;</button> <!-- Right Arrow -->
+                </div>
+            </div>
+            
+            <div id="bestsell">
+                <h2>Best Sellers</h2>
+                <button id="prevButton" onclick="prev()"><b>←</b></button>
+                <img src="images/fiction.jpg" id="bestbks" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" alt="fiction">
+                <button id="nextButton" onclick="next()"><b>→</b></button>
+               
+            </div>
+                         
+        </div>
+    </div>
+</body>
+</html>
